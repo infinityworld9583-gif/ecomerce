@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopHub – Responsive Navbar</title>
 
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ==== NAVBAR ==== -->
+  <nav class="navbar">
+
+    <!-- Logo -->
+    <a href="#" class="logo">
+      <i class="fas fa-store"></i>
+      ShopHub
+    </a>
+
+    <!-- Menu (desktop) / Drawer (mobile) -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Categories</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <!-- Search -->
+    <div class="search-container">
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search products...">
+    </div>
+
+    <!-- Icons -->
+    <div class="nav-icons">
+      <button class="icon-btn" aria-label="Wishlist">
+        <i class="far fa-heart"></i>
+        <span class="badge">3</span>
+      </button>
+      <button class="icon-btn" aria-label="Profile">
+        <i class="far fa-user"></i>
+      </button>
+      <button class="icon-btn" aria-label="Cart">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="badge">5</span>
+      </button>
+    </div>
+
+    <!-- Hamburger -->
+    <div class="menu-toggle" id="menuToggle">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Demo content -->
+  <main style="padding:2rem 5%;text-align:center;">
+    <h1>Welcome to ShopHub</h1>
+    <p>Resize the window – the navbar adapts to every breakpoint.</p>
+  </main>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
